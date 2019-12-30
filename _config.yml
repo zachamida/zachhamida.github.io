@@ -8,7 +8,7 @@
 
 title: Zachary Hamida
 
-description: 'A text-based Jekyll theme.'
+description: 'Ph.D. Candidate at Polytechnique Montreal'
 
 # Replace with your domain, e.g. 'https://username.github.io'
 url: 'https://zachamida.github.io'
@@ -21,15 +21,15 @@ github:
   username: zachamida             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: zachamida            # change to your twitter username
 
 social:
   name: Zachary Hamida                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  email: zachary.hamida@polymtl.ca             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/zachamdia      # change to your twitter homepage
+    - https://github.com/zachamida       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
