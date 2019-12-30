@@ -6,25 +6,25 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Chirpy
+title: Zachary Hamida
 
 description: 'A text-based Jekyll theme.'
 
 # Replace with your domain, e.g. 'https://username.github.io'
-url: 'https://www.example.com'
+url: 'https://zachamida.github.io'
 
-author: your_full_name                  # change to your full name
+author: Zachary Hamida                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # Support network resources.
+avatar: /assets/img/sample/avatar.png   # Support network resources.
 
 github:
-  username: github_username             # change to your github username
+  username: zachamida             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
+  name: Zachary Hamida                  # it will shows as the copyright owner in Footer
   email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -39,7 +39,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 #--------------------------
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: America/Toronto
 
 google_analytics:
   # Fill with your Google Analytics ID
