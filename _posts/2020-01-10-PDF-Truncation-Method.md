@@ -10,8 +10,7 @@ State-space models are well suited for time-series data and allow estimating the
 In some applications, the hidden state is known to be within a specific domain. Therefore, it can be useful to apply state constraints on the state vector components.\
 An example application, is given the system state at time $t$, where 
 
-$$0\le x_t \le 10
-$$
+$$0\le x_t \le 10$$
 
 . State constraints can be imposed through the PDF Truncation Method proposed by Simon et. al [ref].\
 to be continued.
