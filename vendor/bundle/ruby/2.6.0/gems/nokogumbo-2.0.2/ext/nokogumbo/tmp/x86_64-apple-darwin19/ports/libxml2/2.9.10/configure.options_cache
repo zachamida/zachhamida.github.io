@@ -1,0 +1,1 @@
+["--host=x86_64-apple-darwin19", "--enable-static", "--disable-shared", "--without-python", "--without-readline", "--with-c14n", "--with-debug", "--with-threads", "--prefix=/Users/zacharyhamida/Desktop/zachamida.github.io/vendor/bundle/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo/ports/x86_64-apple-darwin19/libxml2/2.9.10"]
