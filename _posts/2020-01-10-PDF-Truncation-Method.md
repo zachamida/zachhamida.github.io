@@ -69,23 +69,23 @@ Following the calculation of the matrices $\mathbf{W}$, $\mathbf{T}$
 \\[D^{\intercal} x_t \leq c_{2},\\]
 By replacing $x_t$, we have,
 
-\\[D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal}\tilde{x_t}\leq c_{2}\\],
+\\[D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal}\tilde{x_t}\leq c_{2},\\]
 
-\\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma}_{t} D\right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}\\],
+\\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma_t} D \right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x_t}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}}\\],
 
 $[1\; 0 \cdots 0] z_{t}  \leq \tilde{c}_{2}(k)$
 
 Similarly, the lower bound is given by,
 
-$\left[\begin{array}{cccc}{1} & {0} & {\cdots} & {0}\end{array}\right] z_{t} \geq \frac{c_{1}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}$
+\\[\left[\begin{array}{cccc}{1} & {0} & {\cdots} & {0}\end{array}\right] z_{t} \geq \frac{c_{1}-D^{\intercal} \tilde{x_t}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}}\\]
 
-$[1\;0\cdots0] z_{t}\ge\tilde{c}_{1}(k)$
+$[1\;0\cdots0] z_{t}\ge\tilde{c_1}(k)$
 
 The transformed upper and lower bounds are applied on a standard Normal PDF ($X\sim\mathcal{N}(0,1)$), in a similar manner to the first example.
 
 The resulting mean $\mu$ and variance $\sigma^2$ are then back-transformed through the following equations,
 
-$\begin{array}{l} {\tilde{x}_{t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x}_{t}} \\ {\tilde{\Sigma}_{t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma}_{t}^2 S W^{1 / 2} T^{\intercal}} \end{array}$
+\\[\begin{array}{l} {\tilde{x_t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x_t} \\ {\tilde{\Sigma_t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma_t}^2 S W^{1 / 2} T^{\intercal}} \end{array}\\]
 
 ## Limitations:
 1- The expected value of the constrained state is shifted towards the feasible region. This may cause a biase in the constrained estimate.
