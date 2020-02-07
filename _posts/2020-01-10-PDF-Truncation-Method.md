@@ -109,7 +109,7 @@ Similarly, the lower bound is given by,
 
 
 $$[1\;0\cdots0] z_{t}\ge\tilde{c}_{1}(k)$$
-
+$$x^2$$
 ![$\[1\; 0 \cdots 0\] z_{t}  \ge \tilde{c}_{1}(k)$](https://render.githubusercontent.com/render/math?math=%24%5B1%5C%3B%200%20%5Ccdots%200%5D%20z_%7Bt%7D%20%20%5Cge%20%5Ctilde%7Bc%7D_%7B1%7D(k)%24)
 
 
