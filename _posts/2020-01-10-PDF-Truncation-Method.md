@@ -15,7 +15,7 @@ Utlizing KF for analyzing a domain restricted time-series data may carry some li
 One way to solve for this problem to apply the PDF truncation method which was introduced by Simon et. al. [1].
 
 ## PDF Truncation
-In order to demonstrate how the PDF truncation method works, it is easier to start with the simpliest case, which is a constrained standard Normal PDF ![$X\sim\mathcal{N}(0,1)$](https://render.githubusercontent.com/render/math?math=%24X%5Csim%5Cmathcal%7BN%7D(0%2C1)%24) with constraints ![$c_1=-1$](https://render.githubusercontent.com/render/math?math=%24c_1%3D-1%24) and ![$c_2=0.5$](https://render.githubusercontent.com/render/math?math=%24c_2%3D0.5%24). Figure (1) show the Normal PDF with the constraints.
+In order to demonstrate how the PDF truncation method works, it is easier to start with the simpliest case, which is a constrained standard Normal PDF $X\sim\mathcal{N}(0,1)$ with constraints $c_1=-1$ and $c_2=0.5$. Figure (1) show the Normal PDF with the constraints.
 
 ![Constrained Standard Normal PDF](https://zachamida.github.io/assets/img/posts/post1/ConstNorm.png)
 
