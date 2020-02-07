@@ -66,11 +66,11 @@ The Jordan canonical provides a matrix $\mathbf{W}$ with similar eigen values. F
 Following the calculation of the matrices $\mathbf{W}$, $\mathbf{T}$
  and $\mathbf{S}$, the transformed upper bound for a standard Normal distribution is derived as in,
 
-\\[D^{\intercal} x_t \leq c_{2}\\],
-
+\\[D^{\intercal} x_t \leq c_{2},\\]
+By replacing $x_t$, we have,
 \\[D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal} \tilde{x}_{t}  \leq c_{2}\\],
 
-$\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma}_{t} D\right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}$,
+\\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma}_{t} D\right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}\\],
 
 $[1\; 0 \cdots 0] z_{t}  \leq \tilde{c}_{2}(k)$
 
