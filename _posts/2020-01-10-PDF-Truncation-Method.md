@@ -108,6 +108,8 @@ Similarly, the lower bound is given by,
 ![$\left\[\begin{array}{cccc}{1} & {0} & {\cdots} & {0}\end{array}\right\] z_{t} \geq \frac{c_{1}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}$](https://render.githubusercontent.com/render/math?math=%24%5Cleft%5B%5Cbegin%7Barray%7D%7Bcccc%7D%7B1%7D%20%26%20%7B0%7D%20%26%20%7B%5Ccdots%7D%20%26%20%7B0%7D%5Cend%7Barray%7D%5Cright%5D%20z_%7Bt%7D%20%5Cgeq%20%5Cfrac%7Bc_%7B1%7D-D%5E%7B%5Cintercal%7D%20%5Ctilde%7Bx%7D_%7Bt%7D%7D%7B%5Cleft(D%5E%7B%5Cintercal%7D%20%5Ctilde%7B%5CSigma%7D_%7Bt%7D%20D%5Cright)%5E%7B1%20%2F%202%7D%7D%24)
 
 
+$$[1\;0\cdots0] z_{t}\ge\tilde{c}_{1}(k)$$
+
 ![$\[1\; 0 \cdots 0\] z_{t}  \ge \tilde{c}_{1}(k)$](https://render.githubusercontent.com/render/math?math=%24%5B1%5C%3B%200%20%5Ccdots%200%5D%20z_%7Bt%7D%20%20%5Cge%20%5Ctilde%7Bc%7D_%7B1%7D(k)%24)
 
 
