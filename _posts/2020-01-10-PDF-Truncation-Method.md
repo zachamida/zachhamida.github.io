@@ -63,7 +63,8 @@ The constraints can be expressed as in,
 The constrained state is defined by ![$\tilde{x}$](https://render.githubusercontent.com/render/math?math=%24%5Ctilde%7Bx%7D%24)
 . The transformation to one dimentional problem is done through the follwoing equation,
 
-![$z_{t}=S W^{-1/2} T^{\intercal}(x_{t}-\tilde{x}_{t})$](https://render.githubusercontent.com/render/math?math=%24z_%7Bt%7D%3DS%20W%5E%7B-1%20%2F%202%7D%20T%5E%7B%5Cintercal%7D%5Cleft(x_%7Bt%7D-%5Ctilde%7Bx%7D_%7Bt%7D%5Cright)%2C%24)
+![$z_{t}=S W^{-1/2} T^{\intercal}(x_{t}-\tilde{x}_{t})$](https://render.githubusercontent.com/render/math?math=%24z_%7Bt%7D%3DS%20W%5E%7B-1%2F2%7D%20T%5E%7B%5Cintercal%7D(x_%7Bt%7D-%5Ctilde%7Bx%7D_%7Bt%7D)%24)
+
 
 where ![$x_{t}$](https://render.githubusercontent.com/render/math?math=%24x_%7Bt%7D%24)
  is the original state and ![$\tilde{x}_{t}$](https://render.githubusercontent.com/render/math?math=%24%5Ctilde%7Bx%7D_%7Bt%7D%24)
