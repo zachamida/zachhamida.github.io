@@ -68,6 +68,7 @@ Following the calculation of the matrices $\mathbf{W}$, $\mathbf{T}$
 
 \\[D^{\intercal} x_t \leq c_{2},\\]
 By replacing $x_t$, we have,
+
 \\[D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal} \tilde{x}_{t}  \leq c_{2}\\],
 
 \\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma}_{t} D\right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}\\],
