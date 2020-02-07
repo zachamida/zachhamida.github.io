@@ -92,9 +92,9 @@ The resulting mean $\mu$ and variance $\sigma^2$ are then back-transformed throu
 1- The expected value of the constrained state is shifted towards the feasible region. This may cause a biase in the constrained estimate.
 
 ## Matlab Code:
-[1] https://academic.csuohio.edu/simond/kalmanconstrained/
+[1] [Simon's source code](https://academic.csuohio.edu/simond/kalmanconstrained/)
 
-[2] https://github.com/zachamida/ConstrainedKalmanFilter
+[2] [Interactive Matlab toolbox](https://github.com/zachamida/ConstrainedKalmanFilter)
 
 ### Resources:
 
