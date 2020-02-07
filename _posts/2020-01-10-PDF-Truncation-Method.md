@@ -59,9 +59,9 @@ $S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=\[(D_{t}^{\intercal}\Sigma_{t}D_{t})^
 
 where $\mathbf{W}$ and $\mathbf{T}$ are obtained from the Jordan canonical as in,
 
-$\bf{T}_{t} \bf{W}_{t} \bf{T}_{t}^{\intercal}=\tilde{\Sigma}_{t}$
+$\mathbf{T}_{t} \mathbf{W}_{t} \mathbf{T}_{t}^{\intercal}=\tilde{\Sigma}_{t}$
 
-The Jordan canonical provides a matrix $\bf{W}$ with similar eigen values. For a covariance matrix, the eigenvectors represent the directions of the largest variance of the data, while the eigenvalues represent the magnitude of this variance in those directions.
+The Jordan canonical provides a matrix $\mathbf{W}$ with similar eigen values. For a covariance matrix, the eigenvectors represent the directions of the largest variance of the data, while the eigenvalues represent the magnitude of this variance in those directions.
 
 Following the calculation of the matrices $\mathbf{W}$, $\mathbf{T}$
  and $\mathbf{S}$, the transformed upper bound for a standard Normal distribution is derived as in,
