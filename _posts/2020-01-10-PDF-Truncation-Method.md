@@ -59,7 +59,7 @@ $S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=\[(D_{t}^{\intercal}\Sigma_{t}D_{t})^
 
 where $\mathbf{W}$ and $\mathbf{T}$ are obtained from the Jordan canonical as in,
 
-$\mathbf{T}_{t} \mathbf{W}_{t} \mathbf{T}_{t}^{\intercal}=\tilde{\Sigma}_{t}$
+$\mathbf{T}_{t}\mathbf{W}_{t}\mathbf{T}_{t}^{\intercal}=\tilde{\Sigma}_{t}$
 
 The Jordan canonical provides a matrix $\mathbf{W}$ with similar eigen values. For a covariance matrix, the eigenvectors represent the directions of the largest variance of the data, while the eigenvalues represent the magnitude of this variance in those directions.
 
