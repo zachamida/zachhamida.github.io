@@ -1,7 +1,7 @@
 ---
 title: "State-Space Models Constraints Using PDF Truncation (Article in Development)"
 date: 2020-01-30 00:34:00 +0800
-categories: [Blogging, Tutorial]
+categories: [State-space models, constrained state estimate, Tutorial]
 tags: [State-Space Models, PDF Truncation]
 toc: false
 ---
