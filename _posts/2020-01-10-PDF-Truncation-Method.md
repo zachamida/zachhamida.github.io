@@ -28,21 +28,17 @@ For any PDF, it is required that the area under the PDF curve is equal to one. T
 
 $\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$
 
-
 Consequently, the truncated PDF equation is then given by,
 
 $\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$
-
 
 After obtaininig the new (truncated) PDF equation, the expected value of the new PDF is computed as in,
 
 $\mu =\frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}} x\exp \left(-x^{2} / 2\right) \mathrm{d}x =\frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)-\exp \left(-c_{2}^{2} / 2\right)\right\].$
 
-
 And the new variance is calculated as in,
 
 $\sigma^{2}= \frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}}\left(x-\mu\right)^{2} \exp \left(-x^{2} / 2\right) \mathrm{d} x = \frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)\left(c_{1}-2 \mu\right)\right.\left.-\exp \left(-c_{2}^{2} / 2\right)\left(c_{2}-2 \mu\right)\right\]+\mu^{2}+1.$
-
 
 Accordingly, the truncated PDF will look as in the figure below,
 
@@ -53,16 +49,13 @@ Applying the PDF truncation for higher dimentions (i.e. multivariate Normal dist
 
 $c_{1} \leq D x_t \leq c_{2}$
 
-
 The constrained state is defined by $\tilde{x}$. The transformation to one dimentional problem is done through the follwoing equation,
 
 $z_{t}=S W^{-1/2} T^{\intercal}(x_{t}-\tilde{x}_{t})$
 
-
 where $x_{t}$ is the original state and $\tilde{x}_{t}$ is the constrained state. The matrix $\mathbf{S}$ is obtained from the Gram–Schmidt orthogonalisation (Moon and Stirling 2000) as in,
 
 $S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=\[(D_{t}^{\intercal}\Sigma_{t}D_{t})^{1/2}\; 0\;\cdots\; 0\]^{\intercal}$
-
 
 where $\mathbf{W}$ and $\mathbf{T}$ are obtained from the Jordan canonical as in,
 
@@ -77,16 +70,13 @@ $D^{\intercal} x_t \leq c_{2}$
 
 $D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal} \tilde{x}_{t}  \leq c_{2}$
 
-
 $\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma}_{t} D\right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}$
 
 $\[1\; 0 \cdots 0\] z_{t}  \leq \tilde{c}_{2}(k)$
 
-
 Similarly, the lower bound is given by,
 
 $\left\[\begin{array}{cccc}{1} & {0} & {\cdots} & {0}\end{array}\right\] z_{t} \geq \frac{c_{1}-D^{\intercal} \tilde{x}_{t}}{\left(D^{\intercal} \tilde{\Sigma}_{t} D\right)^{1 / 2}}$
-
 
 $[1\;0\cdots0] z_{t}\ge\tilde{c}_{1}(k)$
 
@@ -95,7 +85,6 @@ The transformed upper and lower bounds are applied on a standard Normal PDF ($X\
 The resulting mean $\mu$ and variance $\sigma^2$ are then back-transformed through the following equations,
 
 $\begin{array}{l} {\tilde{x}_{t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x}_{t}} \\ {\tilde{\Sigma}_{t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma}_{t}^2 S W^{1 / 2} T^{\intercal}} \end{array}$
-
 
 ## Limitations:
 1- The expected value of the constrained state is shifted towards the feasible region. This may cause a biase in the constrained estimate.
