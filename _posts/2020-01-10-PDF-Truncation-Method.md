@@ -47,19 +47,19 @@ Accordingly, the truncated PDF will look as in the figure below,
 ## Generalizing The PDF Truncation Method:
 Applying the PDF truncation for higher dimentions (i.e. multivariate Normal distribution) requires additional mathematical operations. The PDF truncation is applied to one of the multivariate distribution dimentions at a time. The method is tractable in a sense that the multivariate distribution is transformed into a one dimentional standard Normal case, similar to what was presented earlier. An example application is by considering a mutivariate Normal distribution with two components ($x:X\sim([\mu_1\; \mu_2]^\intercal,\Sigma)$. The constraints can be expressed as in,
 
-$c_{1} \leq D x_t \leq c_{2}$
+\\[c_{1} \leq D x_t \leq c_{2}\\]
 
 The constrained state is defined by $\tilde{x}$. The transformation to one dimentional problem is done through the follwoing equation,
 
-$z_{t}=S W^{-1/2} T^{\intercal}(x_{t}-\tilde{x}_{t})$
+\\[z_{t}=S W^{-1/2} T^{\intercal}(x_{t}-\tilde{x}_{t})\\]
 
 where $x_{t}$ is the original state and $\tilde{x}_{t}$ is the constrained state. The matrix $\mathbf{S}$ is obtained from the Gram–Schmidt orthogonalisation (Moon and Stirling 2000) as in,
 
-$S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=[(D_{t}^{\intercal}\Sigma_{t}D_{t})^{1/2}\; 0\;\cdots\; 0]^{\intercal}$
+\\[S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=[(D_{t}^{\intercal}\Sigma_{t}D_{t})^{1/2}\; 0\;\cdots\; 0]^{\intercal}\\]
 
 where $\mathbf{W}$ and $\mathbf{T}$ are obtained from the Jordan canonical as in,
 
-$\mathbf{T}_{t}\mathbf{W}_{t}\mathbf{T}_{t}^{\intercal}=\tilde{\Sigma_t}$
+\\[\mathbf{T_t}\mathbf{W_t}\mathbf{T_t}^{\intercal}=\tilde{\Sigma_t}\\]
 
 The Jordan canonical provides a matrix $\mathbf{W}$ with similar eigen values. For a covariance matrix, the eigenvectors represent the directions of the largest variance of the data, while the eigenvalues represent the magnitude of this variance in those directions.
 
@@ -85,8 +85,8 @@ The transformed upper and lower bounds are applied on a standard Normal PDF ($X\
 
 The resulting mean $\mu$ and variance $\sigma^2$ are then back-transformed through the following equations,
 
-\\[\begin{array}{l} \tilde{x_t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x_t},\\]
-\\[ \tilde{\Sigma_t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma_t}^2 S W^{1 / 2} T^{\intercal} \end{array}\\]
+\\[\tilde{x_t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x_t},\\]
+\\[\tilde{\Sigma_t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma_t}^2 S W^{1 / 2} T^{\intercal}\\]
 
 ## Limitations:
 1- The expected value of the constrained state is shifted towards the feasible region. This may cause a biase in the constrained estimate.
