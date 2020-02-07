@@ -71,7 +71,7 @@ By replacing $x_t$, we have,
 
 \\[D^{\intercal} T W^{1/2} S^{\intercal} z_{t}+D^{\intercal}\tilde{x_t}\leq c_{2},\\]
 
-\\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma_t} D \right)^{1 / 2}} \leq \frac{c_{2}-D^{\intercal} \tilde{x_t}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}}\\],
+$\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma_t} D \right)^{1 / 2}} \leq \frac{c_2-D^{\intercal} \tilde{x_t}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}},$
 
 $[1\; 0 \cdots 0] z_{t}  \leq \tilde{c}_{2}(k)$
 
