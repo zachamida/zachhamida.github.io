@@ -59,7 +59,7 @@ $S_{t} W_{t}^{1/2} T_{t}^{\intercal} D_{t}=[(D_{t}^{\intercal}\Sigma_{t}D_{t})^{
 
 where $\mathbf{W}$ and $\mathbf{T}$ are obtained from the Jordan canonical as in,
 
-$\mathbf{T}_{t}\mathbf{W}_{t}\mathbf{T}_{t}^{\intercal}=\tilde{\Sigma}_{t}$
+$\mathbf{T}_{t}\mathbf{W}_{t}\mathbf{T}_{t}^{\intercal}=\tilde{\Sigma_t}$
 
 The Jordan canonical provides a matrix $\mathbf{W}$ with similar eigen values. For a covariance matrix, the eigenvectors represent the directions of the largest variance of the data, while the eigenvalues represent the magnitude of this variance in those directions.
 
@@ -73,19 +73,20 @@ By replacing $x_t$, we have,
 
 \\[\frac{\left(D^{\intercal} T W^{1 / 2} S^{\intercal}\right) z_{t}}{\left(D^{\intercal}\tilde{\Sigma_t} D \right)^{1 / 2}} \leq \frac{c_2-D^{\intercal} \tilde{x_t}}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}},\\]
 
-$[1\; 0 \cdots 0] z_{t}  \leq \tilde{c}_{2}(k)$
+\\[ [1\; 0 \cdots 0] z_{t}  \leq \tilde{c}_{2}(k)\\]
 
 Similarly, the lower bound is given by,
 
 \\[\left[\begin{array}{cccc}{1} & {0} & {\cdots} & {0}\end{array}\right] z_{t} \geq \frac{c_1-D^{\intercal} \tilde{x_t}}{\left(D^{\intercal} \tilde{\Sigma_t} D\right)^{1 / 2}}\\]
 
-$[1\;0\cdots0] z_{t}\ge\tilde{c_1}(k)$
+\\[ [1\;0\cdots0] z_{t}\ge\tilde{c_1}(k)\\]
 
 The transformed upper and lower bounds are applied on a standard Normal PDF ($X\sim\mathcal{N}(0,1)$), in a similar manner to the first example.
 
 The resulting mean $\mu$ and variance $\sigma^2$ are then back-transformed through the following equations,
 
-\\[\begin{array}{l} \tilde{x_t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x_t} \\ \tilde{\Sigma_t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma_t}^2 S W^{1 / 2} T^{\intercal} \end{array}\\]
+\\[\begin{array}{l} \tilde{x_t}=T W^{1 / 2} S^{\intercal} \tilde{\mu}+{x_t},\\]
+\\[ \tilde{\Sigma_t}=T W^{1 / 2} S^{\intercal} \tilde{\sigma_t}^2 S W^{1 / 2} T^{\intercal} \end{array}\\]
 
 ## Limitations:
 1- The expected value of the constrained state is shifted towards the feasible region. This may cause a biase in the constrained estimate.
