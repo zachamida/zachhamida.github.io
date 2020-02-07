@@ -19,33 +19,29 @@ In order to demonstrate how the PDF truncation method works, it is easier to sta
 
 ![Constrained Standard Normal PDF](https://zachamida.github.io/assets/img/posts/post1/ConstNorm.png)
 
-In the PDF Truncation, the area between the bounds ![$c_1$](https://render.githubusercontent.com/render/math?math=%24c_1%24)
-and ![$c_2$](https://render.githubusercontent.com/render/math?math=%24c_1%24) is approximated into a normal PDF. For that end, the area between ![$c_1$](https://render.githubusercontent.com/render/math?math=%24c_1%24)
-and ![$c_2$](https://render.githubusercontent.com/render/math?math=%24c_1%24)
- is calculated as in,
+In the PDF Truncation, the area between the bounds $c_1$
+and $c_2$ is approximated into a normal PDF. For that end, the area between $c_1$ and $c_2$ is calculated as in,
 
-![$A=\int_{c_{1}}^{c_{2}} \frac{1}{\sqrt{2 \pi}} \exp \left(-x^{2} / 2\right) \mathrm{d}x =\frac{1}{2}\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]$](https://render.githubusercontent.com/render/math?math=%24A%3D%5Cint_%7Bc_%7B1%7D%7D%5E%7Bc_%7B2%7D%7D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%20%5Cpi%7D%7D%20%5Cexp%20%5Cleft(-x%5E%7B2%7D%20%2F%202%5Cright)%20%5Cmathrm%7Bd%7Dx%20%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft%5B%5Coperatorname%7Berf%7D%5Cleft(c_%7B2%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)-%5Coperatorname%7Berf%7D%5Cleft(c_%7B1%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)%5Cright%5D%24)
+$$A=\int_{c_{1}}^{c_{2}} \frac{1}{\sqrt{2 \pi}} \exp \left(-x^{2} / 2\right) \mathrm{d}x =\frac{1}{2}\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]$$
 
+For any PDF, it is required that the area under the PDF curve is equal to one. Therefore, the area $A$ is normlized with the term $\alpha$ which is given by,
 
-For any PDF, it is required that the area under the PDF curve is equal to one. Therefore, the area ![$A$](https://render.githubusercontent.com/render/math?math=%24A%24)
- is normlized with the term ![$\alpha$](https://render.githubusercontent.com/render/math?math=%24%5Calpha%24) which is given by,
-
-![$\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$](https://render.githubusercontent.com/render/math?math=%24%5Calpha%3D%5Cfrac%7B1%7D%7BA%7D%3D%5Cfrac%7B2%7D%7B%5Cleft%5B%5Coperatorname%7Berf%7D%5Cleft(c_%7B2%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)-%5Coperatorname%7Berf%7D%5Cleft(c_%7B1%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)%5Cright%5D%7D.%24)
+$$\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$$
 
 
 Consequently, the truncated PDF equation is then given by,
 
-![$\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$](https://render.githubusercontent.com/render/math?math=%24%5Calpha%3D%5Cfrac%7B1%7D%7BA%7D%3D%5Cfrac%7B2%7D%7B%5Cleft%5B%5Coperatorname%7Berf%7D%5Cleft(c_%7B2%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)-%5Coperatorname%7Berf%7D%5Cleft(c_%7B1%7D%20%2F%20%5Csqrt%7B2%7D%5Cright)%5Cright%5D%7D.%24)
+$$\alpha=\frac{1}{A}=\frac{2}{\left\[\operatorname{erf}\left(c_{2} / \sqrt{2}\right)-\operatorname{erf}\left(c_{1} / \sqrt{2}\right)\right\]}.$$
 
 
 After obtaininig the new (truncated) PDF equation, the expected value of the new PDF is computed as in,
 
-![$\mu =\frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}} x\exp \left(-x^{2} / 2\right) \mathrm{d}x =\frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)-\exp \left(-c_{2}^{2} / 2\right)\right\].$](https://render.githubusercontent.com/render/math?math=%24%5Cmu%20%3D%5Cfrac%7B%5Calpha%7D%7B%5Csqrt%7B2%20%5Cpi%7D%7D%20%5Cint_%7Bc_%7B1%7D%7D%5E%7Bc_%7B2%7D%7D%20x%5Cexp%20%5Cleft(-x%5E%7B2%7D%20%2F%202%5Cright)%20%5Cmathrm%7Bd%7Dx%20%3D%5Cfrac%7B%5Calpha%7D%7B%5Csqrt%7B2%20%5Cpi%7D%7D%5Cleft%5B%5Cexp%20%5Cleft(-c_%7B1%7D%5E%7B2%7D%20%2F%202%5Cright)-%5Cexp%20%5Cleft(-c_%7B2%7D%5E%7B2%7D%20%2F%202%5Cright)%5Cright%5D.%24)
+$$\mu =\frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}} x\exp \left(-x^{2} / 2\right) \mathrm{d}x =\frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)-\exp \left(-c_{2}^{2} / 2\right)\right\].$$
 
 
 And the new variance is calculated as in,
 
-![$\sigma^{2}= \frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}}\left(x-\mu\right)^{2} \exp \left(-x^{2} / 2\right) \mathrm{d} x = \frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)\left(c_{1}-2 \mu\right)\right.\left.-\exp \left(-c_{2}^{2} / 2\right)\left(c_{2}-2 \mu\right)\right\]+\mu^{2}+1.$](https://render.githubusercontent.com/render/math?math=%24%5Csigma%5E%7B2%7D%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Csqrt%7B2%20%5Cpi%7D%7D%20%5Cint_%7Bc_%7B1%7D%7D%5E%7Bc_%7B2%7D%7D%5Cleft(x-%5Cmu%5Cright)%5E%7B2%7D%20%5Cexp%20%5Cleft(-x%5E%7B2%7D%20%2F%202%5Cright)%20%5Cmathrm%7Bd%7D%20x%20%3D%20%5Cfrac%7B%5Calpha%7D%7B%5Csqrt%7B2%20%5Cpi%7D%7D%5Cleft%5B%5Cexp%20%5Cleft(-c_%7B1%7D%5E%7B2%7D%20%2F%202%5Cright)%5Cleft(c_%7B1%7D-2%20%5Cmu%5Cright)%5Cright.%5Cleft.-%5Cexp%20%5Cleft(-c_%7B2%7D%5E%7B2%7D%20%2F%202%5Cright)%5Cleft(c_%7B2%7D-2%20%5Cmu%5Cright)%5Cright%5D%2B%5Cmu%5E%7B2%7D%2B1.%24)
+$$\sigma^{2}= \frac{\alpha}{\sqrt{2 \pi}} \int_{c_{1}}^{c_{2}}\left(x-\mu\right)^{2} \exp \left(-x^{2} / 2\right) \mathrm{d} x = \frac{\alpha}{\sqrt{2 \pi}}\left\[\exp \left(-c_{1}^{2} / 2\right)\left(c_{1}-2 \mu\right)\right.\left.-\exp \left(-c_{2}^{2} / 2\right)\left(c_{2}-2 \mu\right)\right\]+\mu^{2}+1.$$
 
 
 Accordingly, the truncated PDF will look as in the figure below,
